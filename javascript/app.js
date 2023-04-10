@@ -76,10 +76,6 @@ const app = {
         paletteContainerHTMLElmt.id = 'palette-container';
         document.body.appendChild(paletteContainerHTMLElmt);
         // On va boucler sur notre tableau style et générer un lien pour chaque couleur
-        // Il existe une autre syntaxe pour la boucle for qui va permettre d'alléger un peu
-        // la lecture
-        // ATTENTION: cette syntaxe est valable UNIQUEMENT lorsqu'on a PAS besoin explicitement de la valeur de nos index
-        //c'est for of
         for(let color of app.styles){
             const paletteColorLink = document.createElement('a');
             paletteColorLink.classList.add('palette-color');
